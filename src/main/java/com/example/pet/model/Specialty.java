@@ -1,13 +1,17 @@
 package com.example.pet.model;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
-@Table(name = "Pet types")
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class PetType extends NamedEntity{
+public class Specialty extends BaseEntity{
+
+    private String description;
 }
