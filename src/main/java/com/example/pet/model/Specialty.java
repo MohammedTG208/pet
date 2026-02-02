@@ -11,7 +11,5 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Specialty extends BaseEntity{
-
-    private String description;
+public class Specialty extends NamedEntity{
 }
