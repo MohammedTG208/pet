@@ -21,4 +21,7 @@ public class Pet extends NamedEntity{
     @JoinColumn(name = "type_id")
     private PetType type;
 
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
+    private Owner owner;
 }
